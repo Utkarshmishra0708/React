@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement(
   "div",
   { id: "parent" },
@@ -6,8 +9,6 @@ const parent = React.createElement(
     React.createElement("h2", {}, "I'm an h2 tag"),
   ])
 );
-
-console.log(parent); //object
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
